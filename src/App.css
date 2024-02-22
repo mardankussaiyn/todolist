@@ -1,38 +1,101 @@
-.App {
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9b0f3;
+  margin: 0;
+}
+
+.container{
+  max-width: 400px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #e0b9ef;
+  box-shadow: 0 0 10px rgba(253, 251, 251, 0.48);
+}
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-task-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-task-form input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-task-form button {
+  background-color: #ffffff;
+  color: #e9b0f3;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.486);
+  font-size: 14px;
+}
+
+.add-task-form button:hover {
+  background-color: #e9b0f3;
+}
+.task-list {
   display: flex;
   flex-direction: column;
+}
+form{
+  margin-left: 100px;
+}
+.task-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item p {
+  margin: 0;
+  margin-left: 10px;
+  flex-grow: 1;
+
+}
+.task-item.completed p {
+  text-decoration: line-through;
+}
+.task-item button {
+  background-color: #ffffff;
+  color: #e9b0f3;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.486);
+}
+.task-item button:hover {
+  background-color: #e0b9ef;
+}
+.delete-button {
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #9d9797;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.486);
+}
+.delete-button:hover {
+  background-color: #9b0000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
